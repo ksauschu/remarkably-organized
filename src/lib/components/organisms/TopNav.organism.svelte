@@ -180,7 +180,7 @@
 				<li>
 					<a href="#{year}-{month}">
 						{settings.emojis.months[month - 1] || ''}
-						{new Date(year, month - 1).toLocaleString('default', {
+						{new Date(year, month - 1).toLocaleString('en-GB', {
 							month: !showWeekBreadcrumb && !showDayBreadcrumb ? 'long' : 'short',
 						})}
 					</a>
@@ -200,7 +200,7 @@
 							{new Date(
 								timeframe.weekYear || timeframe.year!,
 								(timeframe.weekMonth || timeframe.month!) - 1,
-							).toLocaleString('default', {
+							).toLocaleString('en-GB', {
 								month:
 									!showDayBreadcrumb &&
 									(!timeframe.weekMonth || timeframe.weekMonth === timeframe.month) &&
@@ -219,11 +219,10 @@
 			{#if showDayBreadcrumb && !isDayDimmed}
 				<li>
 					<a href="#{timeframe.year}-{timeframe.month}-{timeframe.daySinceMonth}">
-						{timeframe.start.toLocaleString('default', {
+						{timeframe.start.toLocaleString('en-GB', {
 							weekday: 'short',
 							timeZone: 'UTC',
 						})}
-						the
 						{@html formatToString(timeframe.daySinceMonth, {
 							type: 'ordinal',
 							html: true,
@@ -309,6 +308,7 @@
 			}
 			a {
 				font-size: 1em;
+				white-space: nowrap;
 				color: var(--text-topbar, var(--text-low));
 				padding: 0 0.25rem;
 				line-height: 1;
@@ -329,7 +329,7 @@
 			margin: 0;
 			display: flex;
 			height: 100%;
-			font-size: 1.2em;
+			font-size: 1em;
 			li {
 				display: flex;
 				align-items: center;
@@ -342,7 +342,7 @@
 				}
 				&:first-child {
 					a {
-						padding-left: 2rem;
+						padding-left: 0.75rem;
 					}
 				}
 				&:last-child {
@@ -354,6 +354,7 @@
 			}
 			a {
 				font-size: 1em;
+				white-space: nowrap;
 				color: var(--text-topbar, var(--text));
 				padding: 0 0.35rem;
 				line-height: 1;

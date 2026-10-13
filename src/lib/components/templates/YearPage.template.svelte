@@ -27,7 +27,7 @@
 	{/snippet}
 	<Text
 		tag="h1"
-		class="pt-2 pb-2 text-[5em] font-bold flex w-full justify-center items-center gap-4 text-center">
+		class="pt-0 pb-1 text-[3em] font-bold flex w-full justify-center items-center gap-4 text-center">
 		{settings.emojis.disable ? '' : getYearEmoji(year.year)}
 		{year.year}
 	</Text>
