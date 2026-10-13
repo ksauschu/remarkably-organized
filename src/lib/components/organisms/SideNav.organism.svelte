@@ -67,7 +67,7 @@
 	);
 	const startWeek = $derived(
 		Math.min(
-			weekList.length - numWeeksInSideNav,
+			Math.max(0, weekList.length - numWeeksInSideNav),
 			Math.ceil(Math.max(0, weekListActiveIndex - numWeeksInSideNav / 2)),
 		),
 	);
@@ -98,7 +98,7 @@
 	});
 	const startDay = $derived(
 		Math.min(
-			dayList.length - numDaysInSideNav,
+			Math.max(0, dayList.length - numDaysInSideNav),
 			Math.ceil(
 				Math.max(
 					0,
