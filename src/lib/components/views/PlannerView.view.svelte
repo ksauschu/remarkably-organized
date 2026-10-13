@@ -1321,7 +1321,7 @@
 			transform: scale(2);
 			transform-origin: top left;
 		}
-		:global(main.high-res > article:not(:nth-child(2))) {
+		:global(main.high-res > article:not(:first-of-type)) {
 			margin-top: calc(var(--doc-height) * 2);
 		}
 		:global(main > article::before) {
