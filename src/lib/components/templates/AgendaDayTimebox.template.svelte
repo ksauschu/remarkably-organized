@@ -37,7 +37,7 @@
 				<Box
 					class="flex justify-between text-[0.8em] text-[var(--text-low)] font-bold tracking-[1px] px-2 pb-1 border-b border-[var(--outline)]">
 					<Text>Task</Text>
-					<Text class="text-right">25m Block Estimate</Text>
+					<Text class="text-right">30m Block Estimate</Text>
 				</Box>
 				{#each new Array(14) as _, i}
 					<Box
