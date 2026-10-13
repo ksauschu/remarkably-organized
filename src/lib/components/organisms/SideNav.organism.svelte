@@ -297,7 +297,7 @@
 								<small>
 									{settings.weekPage.useWeekNumbersInSideNav
 										? 'WK'
-										: week.start.toLocaleString('default', {
+										: week.start.toLocaleString('en-GB', {
 												month: 'short',
 												timeZone: 'UTC',
 											})}
@@ -340,7 +340,7 @@
 								class:highlight-start={highlightStart}
 								class:highlight-end={highlighEnd}>
 								<span class="weekday">
-									{day.start.toLocaleString('default', {
+									{day.start.toLocaleString('en-GB', {
 										weekday: 'short',
 										timeZone: 'UTC',
 									})}

@@ -63,7 +63,7 @@
 							class="no-underline color-[var(--text-low)] w-[3.5rem] text-[0.65rem] transition-colors duration-200 ease-in hover:text-[var(--text)]">
 							<Text weight="bold">
 								{date
-									.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })
+									.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })
 									.toUpperCase()}
 								{date.getUTCDate()}
 							</Text>

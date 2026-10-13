@@ -27,7 +27,7 @@
 			style:font-family={font.name}
 			style:font-size="{font.size}em">
 			<span style="font-weight:{font.boldWeight}">
-				{new Date().toLocaleDateString('default', {
+				{new Date().toLocaleDateString('en-GB', {
 					weekday: 'long',
 					month: 'long',
 					day: 'numeric',
@@ -35,7 +35,7 @@
 				})}
 			</span>
 			<span style="font-weight:{font.normalWeight}">
-				{new Date().toLocaleDateString('default', {
+				{new Date().toLocaleDateString('en-GB', {
 					weekday: 'long',
 					month: 'long',
 					day: 'numeric',
@@ -44,7 +44,7 @@
 			</span>
 			<span style="font-weight:{font.lightWeight}">
 				<!-- {font.name} -->
-				{new Date().toLocaleDateString('default', {
+				{new Date().toLocaleDateString('en-GB', {
 					weekday: 'long',
 					month: 'long',
 					day: 'numeric',

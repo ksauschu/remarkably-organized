@@ -152,25 +152,25 @@ export function formatToString(
 	if (options?.type === 'date' || (!options && val instanceof Date)) {
 		if (!val) return '';
 		if (Object.keys(options || {}).length > 1) {
-			return new Intl.DateTimeFormat(undefined, options).format(
+			return new Intl.DateTimeFormat('en-GB', options).format(
 				typeof val === 'string' ? new Date(val) : val,
 			);
 		}
 		const isSameDay =
 			new Date(val).setHours(0, 0, 0, 0) === new Date().setHours(0, 0, 0, 0);
 		if (isSameDay) {
-			return new Intl.DateTimeFormat(undefined, {
+			return new Intl.DateTimeFormat('en-GB', {
 				timeStyle: 'short',
 			}).format(typeof val === 'string' ? new Date(val) : val);
 		}
 		const isSameYear = new Date(val).getFullYear() === new Date().getFullYear();
 		if (isSameYear) {
-			return new Intl.DateTimeFormat(undefined, {
+			return new Intl.DateTimeFormat('en-GB', {
 				month: 'short',
 				day: 'numeric',
 			}).format(typeof val === 'string' ? new Date(val) : val);
 		}
-		return new Intl.DateTimeFormat(undefined, {
+		return new Intl.DateTimeFormat('en-GB', {
 			dateStyle: 'short',
 		}).format(typeof val === 'string' ? new Date(val) : val);
 	}

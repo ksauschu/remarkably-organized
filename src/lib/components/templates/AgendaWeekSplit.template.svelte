@@ -34,11 +34,11 @@
 						class="day-name text-[0.7rem] text-[var(--text)] tracking-[0.5px]"
 						weight="bold">
 						{date
-							.toLocaleString('default', { weekday: 'long', timeZone: 'UTC' })
+							.toLocaleString('en-GB', { weekday: 'long', timeZone: 'UTC' })
 							.toUpperCase()}
 					</Text>
 					<Text class="text-[0.65rem] text-[var(--text-low)]">
-						{date.toLocaleString('default', { month: 'short', timeZone: 'UTC' })}
+						{date.toLocaleString('en-GB', { month: 'short', timeZone: 'UTC' })}
 						{date.getUTCDate()}
 					</Text>
 				</a>

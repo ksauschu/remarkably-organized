@@ -51,7 +51,7 @@
 				</Box>
 				<Box class="month">
 					<Text>
-						{date.toLocaleString('default', { month: 'short', timeZone: 'UTC' })}
+						{date.toLocaleString('en-GB', { month: 'short', timeZone: 'UTC' })}
 					</Text>
 				</Box>
 			</Link>
@@ -70,7 +70,7 @@
 					<Text>{monthEmojis[month]}</Text>
 				</Box>
 				<Text tag="span" class="month-name">
-					{new Date(Date.UTC(2000, month)).toLocaleString('default', {
+					{new Date(Date.UTC(2000, month)).toLocaleString('en-GB', {
 						month: 'short',
 						timeZone: 'UTC',
 					})}
@@ -87,7 +87,7 @@
 				style="grid-column: {date.getUTCMonth() + 1}">
 				<Box class="weekday">
 					<Text>
-						{date.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })}
+						{date.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })}
 					</Text>
 				</Box>
 				<Box class="date">

@@ -68,7 +68,7 @@
 					: 'border-r'}">
 				<Text class="text-[0.6rem] text-[var(--text-low)]" weight="bold">
 					{date
-						.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })
+						.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })
 						.toUpperCase()}
 				</Text>
 				<Text class="text-[0.8rem] text-[var(--text)]" weight="bold">

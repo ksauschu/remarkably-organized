@@ -50,7 +50,7 @@
 					style:font-weight={getFontInfo(settings.coverPage.font)?.boldWeight || 400}>
 					<div class="start">
 						<small>
-							{settings.years[0].start.toLocaleString('default', {
+							{settings.years[0].start.toLocaleString('en-GB', {
 								month: 'long',
 								timeZone: 'UTC',
 							})}
@@ -60,7 +60,7 @@
 					<div class="separator">-</div>
 					<div class="end">
 						<small>
-							{settings.years[settings.years.length - 1].end.toLocaleString('default', {
+							{settings.years[settings.years.length - 1].end.toLocaleString('en-GB', {
 								month: 'long',
 								timeZone: 'UTC',
 							})}
@@ -77,11 +77,11 @@
 			{/if}
 			{#if settings.date.today && settings.coverPage.showCurrentDay}
 				{@const quarter = Math.floor(settings.date.today.getUTCMonth() / 3) + 1}
-				{@const monthName = settings.date.today.toLocaleString('default', {
+				{@const monthName = settings.date.today.toLocaleString('en-GB', {
 					month: 'long',
 					timeZone: 'UTC',
 				})}
-				{@const dayName = settings.date.today.toLocaleString('default', {
+				{@const dayName = settings.date.today.toLocaleString('en-GB', {
 					weekday: 'long',
 					timeZone: 'UTC',
 				})}

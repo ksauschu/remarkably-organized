@@ -108,7 +108,7 @@
 			style="grid-column: {isTimelineOnLeft ? i + 2 : i + 1}; grid-row: 1;"
 			moonEmoji={moonEvent ? (getMoonEmoji(moonEvent.name) ?? '') : ''}>
 			<Text>
-				{date.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })}
+				{date.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })}
 				{@html formatToString(date.getUTCDate(), { type: 'ordinal', html: true })}
 			</Text>
 			{#if allDayEvents.length > 0}

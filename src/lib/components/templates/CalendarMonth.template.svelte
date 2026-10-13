@@ -58,7 +58,7 @@
 			<Box
 				class="flex items-end justify-center text-[0.8em] font-medium text-[var(--text)] pt-1 pb-2 tracking-[1px] font-display">
 				<Text>
-					{date.toLocaleString('default', { weekday: 'long', timeZone: 'UTC' })}
+					{date.toLocaleString('en-GB', { weekday: 'long', timeZone: 'UTC' })}
 				</Text>
 			</Box>
 		{/each}
@@ -83,7 +83,7 @@
 						? 'bg-black/[0.015]'
 						: ''}">
 					{#if !useWeekSinceYear && week.year && week.month && week.month !== timeframe.month}
-						{new Date(Date.UTC(week.year, week.month)).toLocaleString('default', {
+						{new Date(Date.UTC(week.year, week.month)).toLocaleString('en-GB', {
 							month: 'short',
 						})}
 					{/if}

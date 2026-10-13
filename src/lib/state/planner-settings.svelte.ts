@@ -498,11 +498,11 @@ export class PlannerSettings {
 					start,
 					end,
 					weekStart: new Date(getFirstDayOfWeek(start, this.date.startWeekOnSunday)),
-					nameShort: start.toLocaleDateString('default', {
+					nameShort: start.toLocaleDateString('en-GB', {
 						timeZone: 'UTC',
 						month: 'short',
 					}),
-					nameLong: start.toLocaleDateString('default', {
+					nameLong: start.toLocaleDateString('en-GB', {
 						timeZone: 'UTC',
 						month: 'long',
 					}),
@@ -566,12 +566,12 @@ export class PlannerSettings {
 					weekYear: week.year,
 					weekMonth: week.month,
 					weekQuarter: week.quarter,
-					nameShort: start.toLocaleDateString('default', {
+					nameShort: start.toLocaleDateString('en-GB', {
 						timeZone: 'UTC',
 						month: 'short',
 						day: 'numeric',
 					}),
-					nameLong: start.toLocaleDateString('default', {
+					nameLong: start.toLocaleDateString('en-GB', {
 						timeZone: 'UTC',
 						month: 'long',
 						weekday: 'short',

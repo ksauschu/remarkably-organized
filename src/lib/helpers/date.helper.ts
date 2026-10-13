@@ -104,12 +104,12 @@ export function getTimeframe(
 		start,
 		end: start,
 		weekStart: start,
-		nameShort: start.toLocaleDateString('default', {
+		nameShort: start.toLocaleDateString('en-GB', {
 			timeZone: 'UTC',
 			month: 'short',
 			day: 'numeric',
 		}),
-		nameLong: start.toLocaleDateString('default', {
+		nameLong: start.toLocaleDateString('en-GB', {
 			timeZone: 'UTC',
 			month: 'long',
 			weekday: 'short',

@@ -47,7 +47,7 @@
 							href={getDateHash(date)}
 							class="w-[2.5rem] border-r border-[var(--outline)] flex flex-col items-center justify-center bg-[var(--nav-bg-pdf)] p-1 no-underline text-inherit transition-colors duration-200 ease-in hover:bg-[var(--outline-low)]">
 							<Text class="text-[0.6rem] text-[var(--text-low)]" weight="bold">
-								{date.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })}
+								{date.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })}
 							</Text>
 							<Text class="text-[0.8rem] text-[var(--text)]" weight="bold">
 								{date.getUTCDate()}
@@ -82,7 +82,7 @@
 							href={getDateHash(date)}
 							class="w-[2.5rem] border-r border-[var(--outline)] flex flex-col items-center justify-center bg-[var(--nav-bg-pdf)] p-1 no-underline text-inherit transition-colors duration-200 ease-in hover:bg-[var(--outline-low)]">
 							<Text class="text-[0.6rem] text-[var(--text-low)]" weight="bold">
-								{date.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })}
+								{date.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })}
 							</Text>
 							<Text class="text-[0.8rem] text-[var(--text)]" weight="bold">
 								{date.getUTCDate()}

@@ -58,12 +58,12 @@
 						{/if}
 						{#if display === 'columns'}
 							<Text>
-								{date.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })}
+								{date.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })}
 								{@html formatToString(date.getUTCDate(), { type: 'ordinal', html: true })}
 							</Text>
 						{:else}
 							<Text>
-								{date.toLocaleString('default', { weekday: 'long', timeZone: 'UTC' })}, {date.toLocaleString(
+								{date.toLocaleString('en-GB', { weekday: 'long', timeZone: 'UTC' })}, {date.toLocaleString(
 									'default',
 									{ month: 'long', timeZone: 'UTC' },
 								)}
@@ -102,12 +102,12 @@
 						{/if}
 						{#if display === 'columns'}
 							<Text>
-								{date.toLocaleString('default', { weekday: 'short', timeZone: 'UTC' })}
+								{date.toLocaleString('en-GB', { weekday: 'short', timeZone: 'UTC' })}
 								{@html formatToString(date.getUTCDate(), { type: 'ordinal', html: true })}
 							</Text>
 						{:else}
 							<Text>
-								{date.toLocaleString('default', { weekday: 'long', timeZone: 'UTC' })}, {date.toLocaleString(
+								{date.toLocaleString('en-GB', { weekday: 'long', timeZone: 'UTC' })}, {date.toLocaleString(
 									'default',
 									{ month: 'long', timeZone: 'UTC' },
 								)}
